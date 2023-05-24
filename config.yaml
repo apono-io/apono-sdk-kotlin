@@ -1,0 +1,24 @@
+enablePostProcessFile: false
+additionalProperties:
+  apiPackage: io.apono.sdk.api
+  artifactDescription: View, request and receive permissions to services, DBs and applications.
+  artifactId: apono-sdk-kotlin
+  artifactUrl: https://github.com/apono-io/apono-sdk-kotlin
+  artifactVersion: 0.1.0
+  dateLibrary: java8
+  developerEmail: support@apono.io
+  developerName: Apono Support
+  developerOrganization: Apono
+  developerOrganizationUrl: https://www.apono.io
+  enumPropertyNaming: original
+  groupId: io.apono
+  hideGenerationTimestamp: true
+  invokerPackage: io.apono.sdk.invoker
+  licenseName: Apache 2.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+  modelPackage: io.apono.sdk.model
+  packageName: io.apono.sdk
+  scmConnection: scm:git:git@github.com:apono-io/apono-sdk-kotlin.git
+  scmDeveloperConnection: scm:git:git@github.com:apono-io/apono-sdk-kotlin.git
+  scmUrl: https://github.com/apono-io/apono-sdk-kotlin
+  serializationLibrary: jackson

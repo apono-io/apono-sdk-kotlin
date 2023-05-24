@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export OPENAPI_GENERATOR_VERSION=6.5.0
+export OPENAPI_GENERATOR_VERSION=6.6.0
 
 PROJECT_ROOT=$(dirname "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")")
 
