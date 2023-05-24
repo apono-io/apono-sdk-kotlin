@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main, .*]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MAVEN_CLI_OPTS: --batch-mode --no-transfer-progress
+    steps:
+      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+        with:
+          fetch-depth: 0
+      - name: Install JDK
+        uses: actions/setup-java@5ffc13f4174014e2d4d4572b3d74c3fa61aeb2c2 # v3.11.0
+        with:
+          cache: 'maven'
+          distribution: 'corretto'
+          java-version-file: .java-version
+      - name: Compile
+        run: ./mvnw $MAVEN_CLI_OPTS clean compile
+      - name: Unit Tests
+        run: ./mvnw $MAVEN_CLI_OPTS test
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@4e7013f9576bd22ffdae979dc6e68cb9ec2aeece # v2.7.0
+        if: always()
+        with:
+          files: "*/target/surefire-reports/*.xml"
