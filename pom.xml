@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>1.8.21</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
-        <jackson.version>2.15.1</jackson.version>
+        <jackson.version>2.15.2</jackson.version>
         <junit.version>4.13.2</junit.version>
         <okhttp.version>4.11.0</okhttp.version>
     </properties>
