@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.8.21</kotlin.version>
+        <kotlin.version>1.8.22</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
         <jackson.version>2.15.2</jackson.version>
         <junit.version>4.13.2</junit.version>
